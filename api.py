@@ -400,4 +400,4 @@ if __name__ == '__main__':
         app.register_blueprint(create_api_blueprint(process["SCADDRESS"], process["ABI_PATH"], app_name))
 
 
-    uvicorn.run(app, port=PORT, host="0.0.0.0")
+    asgi_app = app
